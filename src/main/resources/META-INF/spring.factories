@@ -1,0 +1,2 @@
+org.springframework.context.ApplicationListener=\
+eu.hinsch.spring.boot.logging.ExtendedLoggingPropertiesListener

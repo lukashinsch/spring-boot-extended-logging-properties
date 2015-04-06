@@ -1,0 +1,8 @@
+{"properties": [
+  {
+    "name": "logging.properties",
+    "type": "java.util.Map<java.lang.String,java.lang.String>",
+    "description": "properties to be accessible in logging configuration (prefix 'LOGGING_' will be added)",
+    "sourceType": "eu.hinsch.spring.boot.logging.ExtendedLoggingPropertiesListener"
+  }
+]}
