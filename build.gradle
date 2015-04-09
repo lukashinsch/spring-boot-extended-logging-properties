@@ -1,5 +1,5 @@
 ext {
-    springBootVersion = '1.2.0.RELEASE'
+    springBootVersion = '1.2.1.RELEASE'
 }
 
 apply plugin: 'java'
