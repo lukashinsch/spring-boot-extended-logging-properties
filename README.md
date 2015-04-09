@@ -9,13 +9,13 @@ Makes properties from spring environment configuration available in logging conf
 <dependency>
   <groupId>eu.hinsch</groupId>
   <artifactId>spring-boot-extended-logging-properties</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
 </dependency>
 ```
 
 ### Gradle
 ```
-runtime("spring-boot-extended-logging-properties:0.1.0")
+runtime("spring-boot-extended-logging-properties:0.1.1")
 ```
 
 ### Configuration
