@@ -2,7 +2,7 @@
 <configuration>
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>${MY_PROP}%m\n</pattern>
+            <pattern>${my.property} - %m\n</pattern>
             <charset>utf8</charset>
         </encoder>
     </appender>

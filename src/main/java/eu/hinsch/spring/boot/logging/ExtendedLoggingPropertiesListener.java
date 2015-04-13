@@ -15,7 +15,6 @@ import java.util.Map;
 public class ExtendedLoggingPropertiesListener extends LoggingApplicationListener {
 
     private static final String KEY_PREFIX = "logging.properties.";
-    private static final String PROPERTY_PREFIX = "LOGGING_";
 
     @Override
     public void onApplicationEvent(ApplicationEvent event) {
@@ -32,13 +31,7 @@ public class ExtendedLoggingPropertiesListener extends LoggingApplicationListene
                 .getSubProperties(KEY_PREFIX)
                 .entrySet()
                 .stream()
-                .forEach(this::setSystemProperty);
-    }
-
-    private String setSystemProperty(Map.Entry<String, Object> entry) {
-        String key = entry.getKey();
-        String value = entry.getValue().toString();
-        return System.setProperty(key, value);
+                .forEach(entry -> System.setProperty(entry.getKey(), entry.getValue().toString()));
     }
 
     /**
