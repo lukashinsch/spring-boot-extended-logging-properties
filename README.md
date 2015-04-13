@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/lukashinsch/spring-boot-extended-logging-properties/badge.svg?branch=master)](https://coveralls.io/r/lukashinsch/spring-boot-extended-logging-properties?branch=master)
+[![Build Status](https://travis-ci.org/lukashinsch/spring-boot-extended-logging-properties.svg?branch=master)](https://travis-ci.org/lukashinsch/spring-boot-extended-logging-properties)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.hinsch/spring-boot-extended-logging-properties/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.hinsch/spring-boot-extended-logging-properties/)
 
 # spring-boot-extended-logging-properties
