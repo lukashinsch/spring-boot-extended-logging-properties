@@ -1,3 +1,5 @@
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.hinsch/spring-boot-extended-logging-properties/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.hinsch/spring-boot-extended-logging-properties/)
+
 # spring-boot-extended-logging-properties
 
 Makes properties from spring environment configuration available in logging configuration
@@ -9,13 +11,13 @@ Makes properties from spring environment configuration available in logging conf
 <dependency>
   <groupId>eu.hinsch</groupId>
   <artifactId>spring-boot-extended-logging-properties</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
 </dependency>
 ```
 
 ### Gradle
 ```
-runtime("spring-boot-extended-logging-properties:0.1.0")
+runtime("spring-boot-extended-logging-properties:0.2.0")
 ```
 
 ### Configuration
@@ -23,11 +25,11 @@ runtime("spring-boot-extended-logging-properties:0.1.0")
 In application.properties
 
 ```
-logging.properties.SOME_KEY=Some Value
+logging.properties.some.key=Some Value
 ```
 
 In logback.xml
 
 ```
-... ${LOGGING_SOME_KEY}
+${some.key}
 ```

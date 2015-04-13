@@ -28,13 +28,9 @@ public class ExtendedLoggingPropertiesListener implements ApplicationListener<Ap
     }
 
     private String setSystemProperty(Map.Entry<String, Object> entry) {
-        String loggingKey = createLoggingKey(entry.getKey());
+        String key = entry.getKey();
         String value = entry.getValue().toString();
-        return System.setProperty(loggingKey, value);
-    }
-
-    private String createLoggingKey(String key) {
-        return PROPERTY_PREFIX + key.toUpperCase().replace(".", "_");
+        return System.setProperty(key, value);
     }
 
     /**
