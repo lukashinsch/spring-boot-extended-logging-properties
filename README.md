@@ -35,3 +35,7 @@ In logback.xml
 ```
 ${some.key}
 ```
+
+## Notes
+
+- There is an open [issue](https://github.com/spring-projects/spring-boot/issues/1788) for spring boot to support additional logging properties via environment. What is asked for there should all be covered by this library. 
