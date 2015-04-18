@@ -10,7 +10,20 @@ import org.springframework.core.env.ConfigurableEnvironment;
 import java.util.Map;
 
 /**
- * Created by lh on 06/04/15.
+ * Listener to make properties from spring environment available in logging configuration.
+ * <p>
+ * It re-uses the concept from spring boot of setting (system) properties and then reloading
+ * the logging configuration. As there is no stable way to hook into the existing reload by boot
+ * the same behavior is triggered once again reloading and initializing the logging framework twice
+ * (which would not be necessary if code like this would be integrated into LoggingApplicationListener).
+ * <p>
+ * <b>Howto use</b><p>
+ * In application.properties:<p>
+ * {@code logging.properties.some.key=Some Value}<p>
+ * In logback.xml:<p>
+ * {@code ${some.key}}
+ *
+ * @author Lukas Hinsch
  */
 public class ExtendedLoggingPropertiesListener extends LoggingApplicationListener {
 
@@ -24,7 +37,7 @@ public class ExtendedLoggingPropertiesListener extends LoggingApplicationListene
         super.onApplicationEvent(event);
     }
 
-    public void addLoggingProperties(ApplicationEnvironmentPreparedEvent event) {
+    private void addLoggingProperties(ApplicationEnvironmentPreparedEvent event) {
         ConfigurableEnvironment environment = event.getEnvironment();
 
         new RelaxedPropertyResolver(environment)
