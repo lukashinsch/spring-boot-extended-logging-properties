@@ -38,4 +38,6 @@ ${some.key}
 
 ## Notes
 
-- There is an open [issue](https://github.com/spring-projects/spring-boot/issues/1788) for spring boot to support additional logging properties via environment. What is asked for there should all be covered by this library (TODO propose code changes as PR to spring boot repo). 
+- There is an open [issue](https://github.com/spring-projects/spring-boot/issues/1788) 
+(targeted for 1.3 but as of 1.3.0.M1 still unresolved) for spring boot to support 
+additional logging properties via environment. What is asked for there should all be covered by this library. 
