@@ -38,6 +38,4 @@ ${some.key}
 
 ## Notes
 
-- There is an open [issue](https://github.com/spring-projects/spring-boot/issues/1788) 
-(targeted for 1.3 but as of 1.3.0.M1 still unresolved) for spring boot to support 
-additional logging properties via environment. What is asked for there should all be covered by this library. 
+- Starting with release 1.3 (>=M2) spring boot supports access to any environment property in logback configuration out of the box (for details see the official [documentation](http://docs.spring.io/spring-boot/docs/1.3.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-logback-extensions))
