@@ -4,6 +4,8 @@
 
 # spring-boot-extended-logging-properties
 
+[![Join the chat at https://gitter.im/lukashinsch/spring-boot-extended-logging-properties](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lukashinsch/spring-boot-extended-logging-properties?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Makes properties from spring environment configuration available in logging configuration
 
 ## Howto use
